@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		DBCB934F23CF4F0600918D57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB934E23CF4F0600918D57 /* AppDelegate.swift */; };
 		DBCB935123CF4F0600918D57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB935023CF4F0600918D57 /* SceneDelegate.swift */; };
-		DBCB935323CF4F0600918D57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB935223CF4F0600918D57 /* ViewController.swift */; };
+		DBCB935323CF4F0600918D57 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB935223CF4F0600918D57 /* MapViewController.swift */; };
 		DBCB935623CF4F0600918D57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCB935423CF4F0600918D57 /* Main.storyboard */; };
 		DBCB935823CF4F0800918D57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBCB935723CF4F0800918D57 /* Assets.xcassets */; };
 		DBCB935B23CF4F0800918D57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCB935923CF4F0800918D57 /* LaunchScreen.storyboard */; };
+		DBCB936623CF632B00918D57 /* UImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB936523CF632B00918D57 /* UImage+Utils.swift */; };
+		DBCB936923CF7A2E00918D57 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB936823CF7A2E00918D57 /* WeatherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DBCB934B23CF4F0600918D57 /* Super Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Super Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBCB934E23CF4F0600918D57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBCB935023CF4F0600918D57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DBCB935223CF4F0600918D57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBCB935223CF4F0600918D57 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DBCB935523CF4F0600918D57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBCB935723CF4F0800918D57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBCB935A23CF4F0800918D57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBCB935C23CF4F0800918D57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBCB936523CF632B00918D57 /* UImage+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UImage+Utils.swift"; sourceTree = "<group>"; };
+		DBCB936823CF7A2E00918D57 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		DBCB934D23CF4F0600918D57 /* Super Weather */ = {
 			isa = PBXGroup;
 			children = (
+				DBCB936723CF789500918D57 /* Controllers */,
+				DBCB936223CF5EF400918D57 /* Helpers */,
 				DBCB934E23CF4F0600918D57 /* AppDelegate.swift */,
 				DBCB935023CF4F0600918D57 /* SceneDelegate.swift */,
-				DBCB935223CF4F0600918D57 /* ViewController.swift */,
 				DBCB935423CF4F0600918D57 /* Main.storyboard */,
 				DBCB935723CF4F0800918D57 /* Assets.xcassets */,
 				DBCB935923CF4F0800918D57 /* LaunchScreen.storyboard */,
 				DBCB935C23CF4F0800918D57 /* Info.plist */,
 			);
 			path = "Super Weather";
+			sourceTree = "<group>";
+		};
+		DBCB936223CF5EF400918D57 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DBCB936523CF632B00918D57 /* UImage+Utils.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DBCB936723CF789500918D57 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBCB935223CF4F0600918D57 /* MapViewController.swift */,
+				DBCB936823CF7A2E00918D57 /* WeatherViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBCB935323CF4F0600918D57 /* ViewController.swift in Sources */,
+				DBCB935323CF4F0600918D57 /* MapViewController.swift in Sources */,
+				DBCB936923CF7A2E00918D57 /* WeatherViewController.swift in Sources */,
+				DBCB936623CF632B00918D57 /* UImage+Utils.swift in Sources */,
 				DBCB934F23CF4F0600918D57 /* AppDelegate.swift in Sources */,
 				DBCB935123CF4F0600918D57 /* SceneDelegate.swift in Sources */,
 			);
